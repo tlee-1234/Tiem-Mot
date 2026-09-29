@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#fff3f8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Tiệm Mốt">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tiệm Mốt 🎀</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">🎀 Tiệm Mốt</div>
+        <div class="subtitle">Trung tâm mua sắm chibi</div>
+      </div>
+      <button class="round-btn" id="soundBtn" aria-label="Bật tắt âm thanh">🔊</button>
+    </header>
+
+    <main id="screen" class="screen"></main>
+
+    <nav class="bottom-nav" aria-label="Điều hướng">
+      <button data-tab="home" class="nav-btn active"><span>🏠</span><small>Trang chủ</small></button>
+      <button data-tab="shops" class="nav-btn"><span>🛍️</span><small>Cửa hàng</small></button>
+      <button data-tab="stock" class="nav-btn"><span>🎒</span><small>Kho</small></button>
+      <button data-tab="quests" class="nav-btn"><span>🎯</span><small>Nhiệm vụ</small></button>
+      <button data-tab="settings" class="nav-btn"><span>⚙️</span><small>Cài đặt</small></button>
+    </nav>
+  </div>
+
+  <div id="toastLayer" class="toast-layer"></div>
+  <div id="modalLayer"></div>
+  <script src="game.js"></script>
+</body>
+</html>
